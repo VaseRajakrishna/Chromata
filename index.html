@@ -9,9 +9,21 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/rcustom.css">
     <script src="js/jquery.js"></script>
-  
+  <style>
+  .no-display {
+    opacity: 0;
+}
+.appear {
+    opacity: 1;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+  </style>
 </head>
 
 <body>
@@ -25,15 +37,15 @@
                     </div>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="pds-ulactive pds-uline"><a href="index.html">Home</a></li>
-                        <li class="pds-uline"><a href="#">About</a></li>
-                        <li class="pds-uline"><a href="#">Products</a></li>
-                        <li class="pds-uline"><a href="#">Contact</a></li>
+                        <li class="pds-uline" onclick="checkFunction()"><a href="#">About</a></li>
+                        <li class="pds-uline" onclick="checkFunction()"><a href="#">Products</a></li>
+                        <li class="pds-uline" onclick="checkFunction()"><a href="#">Contact</a></li>
                     </ul>
                 </div>
             </nav>
             <div class="container">
                 <div class="content-container">
-                    <div class="header-content">
+                    <div class="header-content fade-up">
                         <h1>Making Our World’s Shared Network Faster, Safer, and Freer For Everyone</h1>
                         <br>
                         <p>We're rebuilding the internet with blockchain technology and free market economics to
@@ -42,7 +54,7 @@
                             <br>
                         <a href="#platform" class="btn r-btn">Find Out More</a>
                     </div>
-                    <div class="header-btm-content">
+                    <div class="header-btm-content fade-up">
                         <p>Learn more about what I do
                         </p>
                         <button class="go-down-btn icon-btn">
@@ -64,6 +76,7 @@
                 <div class="r-content">
                     <div class="col-md-3 col-sm-4">
                         <div class="i-container">
+                             <h4>Network</h4>
                             <div class="i-head">
                                 <div class="icon pds-icon">
                                     <img src="pics/section-images/Network.png" class="img-responsive" alt="NetWorking">
@@ -71,7 +84,7 @@
 
                             </div>
                             <div class="i-f-text">
-                                <h4>Network</h4>
+                               
                                 <p>
                                     A peer-to-peer communication protocol that uses a hypertext application protocol
                                     based-on content addressing, a decentralized overlay network, and encryption to
@@ -83,13 +96,14 @@
 
                     <div class="col-md-3 col-sm-4">
                         <div class="i-container">
+                                <h4>Name System</h4>
                             <div class="i-head">
                                 <div class="icon pds-icon">
                                     <img src="pics/section-images/Name_System.png" class="img-responsive" alt="NetWorking">
                                 </div>
                             </div>
                             <div class="i-f-text">
-                                <h4>Name System</h4>
+                             
                                 <p>
                                     A decentralized name system to map human-readable names with a unique address while
                                     eliminating centralized points of failure and returning ownership of data and
@@ -100,6 +114,7 @@
                     </div>
                     <div class="col-md-3 col-sm-4">
                         <div class="i-container">
+                                <h4>Compute</h4>
                             <div class="i-head">
                                 <div class="icon pds-icon">
                                     <img src="pics/section-images/Compute.png" class="img-responsive" alt="NetWorking">
@@ -107,7 +122,7 @@
 
                             </div>
                             <div class="i-f-text">
-                                <h4>Compute</h4>
+                              
                                 <p>
                                     A smart contract-based computing platform to run decentralized applications
                                     accessible by a client application browser that are unstoppable and safe from
@@ -118,13 +133,14 @@
                     </div>
                     <div class="col-md-3 col-sm-4">
                         <div class="i-container">
+                                <h4>Storage</h4>
                             <div class="i-head">
                                 <div class="icon pds-icon">
                                     <img src="pics/section-images/Storage.png" class="img-responsive" alt="NetWorking">
                                 </div>
                             </div>
                             <div class="i-f-text">
-                                <h4>Storage</h4>
+                               
                                 <p>
                                     A blockchain-based immutable, decentralized filesystem for the storing of static
                                     content and the storage of dynamic data in the blockchain to be accessed through
@@ -243,6 +259,36 @@
     </div>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+        //  $(document).ready(function ($) {
+        //     'use strict';
+        //     debugger;
+        //     $('.fade-up, .fade-down, .bounce-in, .flip-in,.fade-in-right,.fade-in-left').addClass('no-display');
+        //     $('.bounce-in').one('inview', function () {
+        //         $(this).addClass('animated bounceIn appear');
+        //     });
+        //     $('.flip-in').one('inview', function () {
+        //         $(this).addClass('animated flipInY appear');
+        //     });
+
+        //     $('.fade-up').one('inview', function () {
+        //         $(this).addClass('animated fadeInUp appear');
+        //     });
+        //     $('.fade-down').one('inview', function () {
+        //         $(this).addClass('animated fadeInDown appear');
+        //     });
+
+        //     $('.fade-in-left').one('inview', function () {
+        //         $(this).addClass('animated fadeInLeft appear');
+        //     });
+        //     $('.fade-in-right').one('inview', function () {
+        //         $(this).addClass('animated fadeInRight appear');
+        //     });
+        //  });
+            function checkFunction() {
+                alert("currently under working");
+            }
+        </script>
 </body>
 
 </html>

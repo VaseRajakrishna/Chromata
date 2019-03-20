@@ -311,9 +311,10 @@
     color:#2dce89;
   }
   .i-container{
-    min-height: 375px;
+    min-height: 410px;
     border-top: 0.5px solid #eee;
     padding: 10px;
+    padding-top: 0px;
     transition: all .20s ease-in-out;
     box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
   }
@@ -321,6 +322,15 @@
     box-shadow: 0 30px 60px -12px rgba(50,50,93,.25), 0 18px 36px -18px rgba(0,0,0,.3), 0 -12px 36px -8px rgba(0,0,0,.025);
     -webkit-transform: translateY(-2px);
     transform: translateY(-2px);
+  }
+  .i-container h4{
+    margin-right: -10px;
+    margin-left: -10px;
+    padding: 10px;
+    background: #2dce89;
+    color: #fff;
+    margin-top: 0px;
+    margin-bottom: 15px;
   }
   .i-f-text h4{
     color: #2dce89;
@@ -330,13 +340,14 @@
 }
 .icon {
     width: 120px;
-    height: 120px;
+    height: 150px;
     padding-bottom: 10px;
     margin: 0 auto;
     color: #fff;
 }
 .pds-icon img{
     max-height:120px;
+    margin-bottom: 10px;
 }
 .pds-abt-icon {
     height: 90px;
