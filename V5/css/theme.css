@@ -87,7 +87,7 @@ Header-Background
 .overlay-bg {
     background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%) repeat scroll 0 0;
     background: rgba(0, 0, 0, 0) linear-gradient(to right, #53f 0%, #166ef6 0%, #3bf7df 100%) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #06cbf6 0%, #63e5a7 100%) repeat scroll 0 0;
+    /* background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #06cbf6 0%, #63e5a7 100%) repeat scroll 0 0; */
 }
 
 .dewo:after {
