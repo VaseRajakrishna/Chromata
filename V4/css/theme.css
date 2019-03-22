@@ -87,7 +87,7 @@ Header-Background
 .overlay-bg {
     background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%) repeat scroll 0 0;
     background: rgba(0, 0, 0, 0) linear-gradient(to right, #53f 0%, #166ef6 0%, #3bf7df 100%) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #06cbf6 0%, #63e5a7 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #53f 0%, #166ef6 0%, #3bf7df 100%) repeat scroll 0 0;
 }
 
 .dewo:after {
@@ -235,7 +235,7 @@ Angle-background
 
 .single_screen_slide {
     background: rgba(0, 0, 0, 0) url("../images/screen/phone.png") no-repeat scroll center center;
-    padding: 66px 70px 70px 71px;
+    padding: 65px 70px 70px 71px;
 }
 
 .list_screen_slide:after {
@@ -481,7 +481,7 @@ address {
 .mainmenu-area.affix {
     background: #1e5799;
     background: -webkit-linear-gradient(left, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
-    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+    background: linear-gradient(to right, #1690f1 0%, #166ef6 0%, #2dd3e5 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#16c9f6', GradientType=1);
     box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1);
     padding: 0;
@@ -496,6 +496,7 @@ address {
 .mainmenu-area .navbar-brand .logo-text {
     -webkit-transition: 0.3s;
     transition: 0.3s;
+    margin: 0px;
 }
 
 #mainmenu li a {
