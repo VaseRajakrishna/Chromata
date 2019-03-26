@@ -1,46 +1,8 @@
-/* Spring - Software, App, Saas & Product Showcase Landing HTML5 Template */
 
-/************ TABLE OF CONTENTS ***************
-1. Fonts
-2. Reset
-3. Global
-4. Main Header / Style One / Style Two
-5. Main Banner / One / Two / Three / Four
-6. What We Offer
-7. Features Section
-8. Services Section
-9. Products Section
-10. Inventory Section
-11. Blog Section
-12. Testimonials One
-13. Contact Section
-14. Main Footer / Style One / Style Two / Style Three
-15. Specific Features
-16. Clients Section
-17. Testimonials Two
-18. Sponsors Section
-19. Call To Action
-20. Features Section Two
-21. Specific Features
-22. Overview Section
-23. Download App 
-24. Invoice Section
-25. Pricing Section
-26. Call To Actions Two
-27. Page Title
-28. Sidebar Page Container
-29. Sidebar
-30. Sidebar Widgets
-31. Blog Grid View
-32. BLog Details
-33. Comments Area
-34. Comment Form
-35. Styled Pagination
-36. Responsive.css
 
-**********************************************/
 
-@import url('https://fonts.googleapis.com/css?family=Heebo:300,400,500,700,800,900');
+
+
 
 /*
 font-family: 'Heebo', sans-serif;
@@ -75,16 +37,6 @@ font-family: 'Heebo', sans-serif;
 
  ***/
 
-body {
-	/*font-family: 'Heebo', sans-serif;
-	font-size:18px;
-	color:#6f8ba4;
-	line-height:1.6em;
-	font-weight:400;
-	background:#ffffff;
-	-webkit-font-smoothing: antialiased;
-	-moz-font-smoothing: antialiased;*/
-}
 
 a{
 	text-decoration:none;
@@ -1080,6 +1032,7 @@ img{
 	font-size:18px;
 	font-weight:300;
 	margin-bottom:50px;	
+	text-shadow: 0px 0px 0px;
 }
 
 .banner-four .text-column .theme-btn{
