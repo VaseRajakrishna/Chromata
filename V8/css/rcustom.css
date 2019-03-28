@@ -415,7 +415,7 @@ button {
 }
 .footer-area {
   display: block;
-  padding: 339px 0px 120px;
+  padding: 340px 0px 40px;
   background: url(../images/screen/footer-bg.png) no-repeat center;
   background-size: 100% 100%;
 }
@@ -450,7 +450,7 @@ button {
 }
 
 .section-content p {
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
 }
 
@@ -570,7 +570,7 @@ button {
 .img-content img {
     max-width: 350px;
     margin: 0 auto;
-    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, .25), 0 18px 36px -18px rgba(0, 0, 0, .3), 0 -12px 36px -8px rgba(0, 0, 0, .025);
+    /* box-shadow: 0 30px 60px -12px rgba(50, 50, 93, .25), 0 18px 36px -18px rgba(0, 0, 0, .3), 0 -12px 36px -8px rgba(0, 0, 0, .025); */
 }
 
 .icon {
@@ -835,7 +835,9 @@ button {
 .pds-media {
   text-align: left;
 }
-
+.logo a img{
+  max-width: 200px;
+}
 /* @media (min-width: 1200px){
 .container {
     width: 90%;

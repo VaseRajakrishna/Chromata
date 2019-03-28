@@ -13,12 +13,12 @@ main h2[class^=common-Uppercase] {
 }
 
 .globalNav .colorize {
-    color: #fff;
+    color: #51718c;
 }
 
 .globalNav .colorize.active,
 .globalNav .colorize:hover {
-    color: hsla(0, 0%, 100%, .5);
+    color: #1e89e6;
 }
 
 main header {

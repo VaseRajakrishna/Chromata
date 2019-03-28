@@ -58,9 +58,6 @@ a:hover,a:focus,a:visited{
 	line-height:1.4em;
 }*/
 
-input,button,select,textarea{
-	font-family: 'Heebo', sans-serif;
-}
 
 textarea{
 	overflow:hidden;

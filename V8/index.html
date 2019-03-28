@@ -24,8 +24,8 @@
     <link href="css/responsive.css" rel="stylesheet">
 
 
-    <!--<script src="js/default.min.js"></script>
-    <script src="js/index.min.js"></script>-->
+    <script src="js/default.min.js"></script>
+    <script src="js/index.min.js"></script>
     <script src="js/jquery.js"></script>
     <style>
         .no-display {
@@ -43,85 +43,428 @@
         .item p {
             font-size: 18px;
         }
+
+        /* .owl-stage-outer {
+            transition: all .20s ease-in-out;
+        }
+
+       
+
+        .client-more {
+            display: none;
+            position: absolute;
+            z-index: 11;
+            left: 0;
+            right: 0;
+            bottom: 33%;
+            max-width: 150px;
+            margin: 0 auto;
+        }
+
+        #client-ctnr:hover .client-more {
+            display: block;
+        } */
+        #client-ctnr{
+            margin: 25px 0px; 
+            position: relative;
+        }
+        .sponsors-slider {
+            width: 100%;
+            padding: 50px 0px;
+            text-align: center;
+
+        }
+
+        .sponsors-slider li {
+            width: 150px;
+            display: inline-block;
+        }
+        
+        .sponsors-slider:hover {
+            filter: blur(0.4em);
+            /* background: #eaeaea; */
+            z-index: -1;
+            cursor: pointer;
+        }
+        .client-more {
+           opacity: 0;
+            position: absolute;
+            z-index: 11;
+            left: 0;
+            right: 0;
+            top: 0;
+            /* bottom: 33%; */
+            max-width: 150px;
+            margin: 0 auto;
+        }
+
+        #client-ctnr:hover>.client-more {
+           opacity: 1;
+           top: 33%;
+        }
+        .client-more:hover>.sponsors-slider{
+            filter: blur(0.4em);
+            background: #eaeaea;
+            z-index: -1;
+        }
     </style>
 </head>
 
 <body>
-    <div class="globalContent">
-        <main>
-            <!--Header-Area-->
-            <!-- Main Header-->
-            <header class="main-header alternate">
-               
-                <!-- Main Box -->
-                <div class="main-box">
-                    <div class="auto-container">
-                        <div class="outer-container clearfix">
-                            <a class="navbar-brand">Chromata</a>
-                            <!--Logo Box-->
-                            <!--Nav Outer-->
-                            <div class="nav-outer clearfix">
-                                <!-- Main Menu -->
-                                <nav class="main-menu">
+    <header class="globalNav initialized noDropdownTransition">
+        <div class="container-wide">
+            <nav>
+                <ul class="navRoot">
+                    <li class="navSection logo">
+                        <a class="rootLink item-home colorize" href="/" aria-label="Chromata homepage">
+                        <img src="images/global/chromata-logo.png" alt="Chromata">
+                        </a>
+                    </li>
+                    <li class="navSection primary">
+                        <button class="rootLink item-products hasDropdown colorize" data-dropdown="products"
+                            aria-haspopup="true" aria-expanded="true">
+                            <span>Products</span>
+                        </button>
+                        <button class="rootLink item-developers hasDropdown colorize" data-dropdown="developers"
+                            aria-haspopup="true" aria-expanded="false">
+                            <span>Developers</span>
+                        </button>
+                        <button class="rootLink item-company hasDropdown colorize" data-dropdown="company"
+                            aria-haspopup="true" aria-expanded="false">
+                            <span>Company</span>
+                        </button>
+                        <a data-analytics-action="pricing" data-analytics-source="global_nav"
+                            class="rootLink item-pricing colorize" href="/us/pricing">
+                            <span>Pricing</span>
+                        </a>
+                    </li>
 
-                                    <div class="navbar-header">
-                                        <!-- Toggle Button -->
-                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                        </button>
-                                    </div>
+                    <li class="navSection secondary">
+                        <a class="rootLink item-support colorize" href="#" data-analytics-action="support"
+                            data-analytics-source="global_nav">
+                            <span>Support</span>
+                        </a>
+                        <a class="rootLink item-dashboard colorize" data-adroll-segment="submit_two" href="#"
+                            data-analytics-source="global_nav" data-analytics-action="sign_in">
+                            <span>Sign in</span>
+                        </a>
 
-                                    <div class="navbar-collapse collapse scroll-nav clearfix">
-                                        <ul class="navigation clearfix">
-                                                <li><a href="#">Home</a></li>
-                                            <li class="dropdown">
-                                                <a href="#">Products</a>
-                                                <ul>
-                                                    <li><a href="#">About Us</a></li>
-                                                    <li><a href="#">Pricing</a></li>
-                                                    <li class="dropdown">
-                                                        <a href="#">Services</a>
-                                                        <ul>
-                                                            <li><a href="#">All Services</a></li>
-                                                            <li><a href="#">Service Details</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="dropdown">
-                                                        <a href="#">Blog</a>
-                                                        <ul>
-                                                            <li><a href="#">Blog Page</a></li>
-                                                            <li><a href="#">Blog Post Details</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="#">Contact Us</a></li>
-                                                </ul>
+                    </li>
+
+
+                    <li class="navSection mobile">
+                        <a class="rootLink item-mobileMenu colorize">
+                            <h2>Menu</h2>
+                        </a>
+                        <div class="popup">
+                            <div class="popupContainer">
+                                <a class="popupCloseButton">Close</a>
+                                <div class="mobileProducts">
+                                    <h4>Products</h4>
+                                    <div class="mobileProductsList">
+                                        <ul>
+                                            <li>
+                                                <a class="linkContainer item-payments" href="#"
+                                                    data-analytics-source="mobile_nav">
+                                                    Network
+                                                </a>
                                             </li>
-                                            <li><a href="#">Services</a></li>
-                                            <li><a href="#">About</a></li>
-                                            <!--<li><a href="#overview">Overview</a></li>-->
+                                            <li>
+                                                <a class="linkContainer item-subscriptions" href="#"
+                                                    data-analytics-source="mobile_nav">
+                                                    Name System
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="linkContainer item-connect" href="#"
+                                                    data-analytics-source="mobile_nav">
+                                                    Compute
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="linkContainer item-sigma" href="#"
+                                                    data-analytics-source="mobile_nav">
+                                                    Storage
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <a class="linkContainer item-atlas" href="#"
+                                                    data-analytics-source="mobile_nav">
+                                                    Atlas
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="linkContainer item-radar" href="#"
+                                                    data-analytics-source="mobile_nav">
+                                                    Radar
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="linkContainer item-issuing" href="#"
+                                                    data-analytics-action="issuing" data-analytics-source="mobile_nav">
+                                                    Issuing
+
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="linkContainer item-terminal" href="#"
+                                                    data-analytics-source="mobile_nav">
+                                                    Terminal
+
+                                                </a>
+                                            </li>
                                         </ul>
                                     </div>
-
-                                </nav>
-                                <!-- Main Menu End-->
-                                <!--Other Links-->
-                                <div class="other-links">
-                                    <a href="#" class="theme-btn btn-style-one">Sign in</a>
                                 </div>
+                                <div class="mobileSecondaryNav">
+                                    <ul>
+                                        <li>
+                                            <a class="item-pricing" href="#" data-analytics-source="mobile_nav">
+                                                Pricing
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="item-workswith" href="#" data-analytics-source="mobile_nav">
+                                                Works with Stripe
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="item-partner-program" href="#" data-analytics-source="mobile_nav">
+                                                Partner Program
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="item-documentation" href="#" data-analytics-source="mobile_nav">
+                                                Documentation
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a class="item-about" href="#" data-analytics-source="mobile_nav">
+                                                About
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="item-jobs" href="#" data-analytics-source="mobile_nav">
+                                                Jobs
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="item-newsroom" href="#" data-analytics-source="mobile_nav">
+                                                Newsroom
+                                            </a>
+                                        </li>
 
+                                    </ul>
+                                </div>
+                                <a class="mobileSignIn" href="#" data-analytics-source="mobile_nav">
+                                    Sign in
+                                </a>
                             </div>
-                            <!--Nav Outer End-->
-
                         </div>
+                    </li>
+
+
+                </ul>
+            </nav>
+        </div>
+
+
+
+        <div class="dropdownRoot">
+            <div class="dropdownBackground" style="transform: translateX(462px) scaleX(1.03421) scaleY(1.0525);">
+                <div class="alternateBackground" style="transform: translateY(247.981px);"></div>
+            </div>
+            <div class="dropdownArrow" style="transform: translateX(658px) rotate(45deg);"></div>
+            <div class="dropdownContainer" style="transform: translateX(462px); width: 393px; height: 421px;">
+
+                <div class="dropdownSection left" data-dropdown="products" aria-hidden="true">
+                    <div class="dropdownContent" style="width: 393px; height: 421px;">
+
+                        <div class="linkGroup">
+                            <ul class="productsGroupPrimary">
+                                <li>
+                                    <a class="linkContainer item-payments" href="#" data-analytics-source="nav_dropdown"
+                                        tabindex="-1">
+
+                                        <div class="productLinkContent">
+                                            <h3 class="linkTitle">Network</h3>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="linkContainer item-subscriptions" href="#"
+                                        data-analytics-source="nav_dropdown" tabindex="-1">
+                                        <div class="productLinkContent">
+                                            <h3 class="linkTitle">Name System</h3>
+                                            <!-- <p class="linkSub">Build and scale your recurring business&nbsp;model.</p> -->
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="linkContainer item-connect" href="#" data-analytics-source="nav_dropdown"
+                                        tabindex="-1">
+
+                                        <div class="productLinkContent">
+                                            <h3 class="linkTitle">Compute</h3>
+
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="linkContainer item-subscriptions" href="#"
+                                        data-analytics-source="nav_dropdown" tabindex="-1">
+
+                                        <div class="productLinkContent">
+                                            <h3 class="linkTitle">Storage</h3>
+
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
 
-            </header>
-            <!--End Main Header -->
+                <div class="dropdownSection active" data-dropdown="developers" aria-hidden="true">
+                    <div class="dropdownContent" style="width: 393px; height: 421px;">
+
+                        <div class="linkGroup documentationGroup">
+                            <a class="linkContainer withIcon item-documentation" href="#"
+                                data-analytics-action="documentation" data-analytics-source="nav_dropdown"
+                                tabindex="-1">
+                                <h3 class="linkTitle linkIcon">Documentation</h3>
+
+                            </a>
+                            <div class="documentationArticles">
+                                <ul>
+                                    <li>
+                                        <h4>Get started</h4>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-analytics-source="nav_dropdown" tabindex="-1">
+                                            Elements
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-analytics-source="nav_dropdown" tabindex="-1">
+                                            Checkout
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-analytics-source="nav_dropdown" tabindex="-1">
+                                            Mobile apps
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-analytics-source="nav_dropdown" tabindex="-1">
+                                            Libraries
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <h4>Popular topics</h4>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" data-analytics-source="nav_dropdown" tabindex="-1">
+                                            Testing
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-analytics-source="nav_dropdown" tabindex="-1">
+                                            Launch checklist
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                        <ul class="linkGroup linkList developersGroup">
+                            <li>
+                                <a class="linkContainer item-apiReference" href="#"
+                                    data-analytics-action="api_reference" data-analytics-source="nav_dropdown"
+                                    tabindex="-1">
+                                    <h3 class="linkTitle linkIcon">Full API Reference</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="linkContainer item-apiStatus" href="#" data-analytics-source="nav_dropdown"
+                                    tabindex="-1">
+                                    <h3 class="linkTitle linkIcon">API Status</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="linkContainer item-openSource" href="#" data-analytics-source="nav_dropdown"
+                                    tabindex="-1">
+                                    <h3 class="linkTitle linkIcon">Open Source</h3>
+                                </a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="dropdownSection right" data-dropdown="company" aria-hidden="true">
+                    <div class="dropdownContent" style="width: 393px; height: 421px;">
+
+                        <ul class="linkGroup linkList companyGroup">
+                            <li>
+                                <a class="linkContainer item-about" href="#" data-analytics-source="nav_dropdown"
+                                    tabindex="-1">
+                                    <h3 class="linkTitle linkIcon">About Chromata</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="linkContainer item-customers" href="#" data-analytics-source="nav_dropdown"
+                                    tabindex="-1">
+                                    <h3 class="linkTitle linkIcon">Customers</h3>
+                                </a></li>
+                            <li>
+                                <a class="linkContainer item-partner-program" href="#"
+                                    data-analytics-source="nav_dropdown" tabindex="-1">
+                                    <h3 class="linkTitle linkIcon">Partner Program</h3>
+                                </a></li>
+                            <li>
+                                <a class="linkContainer item-jobs" href="#" data-analytics-source="nav_dropdown"
+                                    tabindex="-1">
+                                    <h3 class="linkTitle linkIcon">Jobs</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="linkContainer item-environment" href="#" data-analytics-source="nav_dropdown"
+                                    tabindex="-1">
+                                    <h3 class="linkTitle linkIcon">Environment</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="linkContainer item-newsroom" href="#" data-analytics-source="nav_dropdown"
+                                    tabindex="-1">
+                                    <h3 class="linkTitle linkIcon">Newsroom</h3>
+                                </a>
+                            </li>
+                        </ul>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+    <div class="globalContent">
+        <main>
+
             <!--Main Banner / Banner Three-->
-            <section class="main-banner banner-three" id="banner" style="background-image:url(images/screen/banner-bg-3.png);">
+            <section class="main-banner banner-three" id="banner"
+                style="background-image:url(images/screen/banner-bg-3.png);">
                 <!--Image Layer-->
                 <div class="image-layer" style="background-image:url(images/screen/banner-image-1.png)"></div>
 
@@ -131,8 +474,11 @@
                         <div class="text-column col-lg-7 col-md-12 col-sm-12 col-xs-12">
                             <div class="inner">
                                 <h2>Making Our World’s Shared Network Faster, Safer, and Freer For Everyone</h2>
-                                <p>We're rebuilding the internet with blockchain technology and free market economics to protect Life, Liberty, and the pursuit of happiness. The Chromata protocol is a new, decentralized take on the internet to do this.</p>
-                                <div class="links-box clearfix"><a href="#" class="theme-btn btn-style-five">Find Out More</a></div>
+                                <p>We're rebuilding the internet with blockchain technology and free market economics to
+                                    protect Life, Liberty, and the pursuit of happiness. The Chromata protocol is a new,
+                                    decentralized take on the internet to do this.</p>
+                                <div class="links-box clearfix"><a href="#" class="theme-btn btn-style-five">Find Out
+                                        More</a></div>
                             </div>
                         </div>
                     </div>
@@ -141,33 +487,42 @@
             </section>
             <!--End Main Banner-->
             <!--Header-Area/-->
+            <div class="r-container r1-container text-center">
+                <div class="container-wide">
+                    <div class="r-content clearfix">
+                        <div class="col-xs-12">
+                            <div class="section-content fade-up">
+                                <h1>What is the Chromata protocol?</h1>
+                                <p>
+                                    The Chromata protocol is a new, open-source and decentralized take on the internet
+                                    that
+                                    consists of five components:
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="r-container r1-container">
                 <div class="container-wide">
                     <div class="r-content">
-                        <div class="section-content fade-up">
-                            <h1>What is the Chromata protocol?</h1>
-                            <p>
-                                The Chromata protocol is a new, open-source and decentralized take on the internet that
-                                consists of five components:
-                            </p>
-                        </div>
-                    </div>
-                    <div class="r-content">
                         <div class="col-md-4 col-sm-4 fade-up">
-                            <div class="i-container card-one">  
+                            <div class="i-container card-one">
                                 <h4>Network</h4>
                                 <div class="i-head">
                                     <div class="icon pds-icon">
                                         <img src="pics/section-images/Network.png" class="img-responsive"
-                                             alt="NetWorking">
+                                            alt="NetWorking">
                                     </div>
 
                                 </div>
                                 <div class="i-f-text">
 
                                     <p>
-                                        A peer-to-peer communication protocol that uses a hypertext application protocol
-                                        based-on content addressing, a decentralized overlay network, and encryption to
+                                        A peer-to-peer communication protocol that uses a hypertext application
+                                        protocol
+                                        based-on content addressing, a decentralized overlay network, and encryption
+                                        to
                                         make our internet faster and safer.
                                     </p>
                                 </div>
@@ -180,15 +535,17 @@
                                 <div class="i-head">
                                     <div class="icon pds-icon">
                                         <img src="pics/section-images/Name_System.png" class="img-responsive"
-                                             alt="NetWorking">
+                                            alt="NetWorking">
                                     </div>
                                 </div>
                                 <div class="i-f-text">
 
                                     <p>
-                                        A decentralized name system to map human-readable names with a unique address
+                                        A decentralized name system to map human-readable names with a unique
+                                        address
                                         while
-                                        eliminating centralized points of failure and returning ownership of data and
+                                        eliminating centralized points of failure and returning ownership of data
+                                        and
                                         identity to the user.
                                     </p>
                                 </div>
@@ -200,7 +557,7 @@
                                 <div class="i-head">
                                     <div class="icon pds-icon">
                                         <img src="pics/section-images/Compute.png" class="img-responsive"
-                                             alt="NetWorking">
+                                            alt="NetWorking">
                                     </div>
 
                                 </div>
@@ -208,7 +565,8 @@
 
                                     <p>
                                         A smart contract-based computing platform to run decentralized applications
-                                        accessible by a client application browser that are unstoppable and safe from
+                                        accessible by a client application browser that are unstoppable and safe
+                                        from
                                         censorship, fraud, and unavailability.
                                     </p>
                                 </div>
@@ -220,14 +578,16 @@
                                 <div class="i-head">
                                     <div class="icon pds-icon">
                                         <img src="pics/section-images/Storage.png" class="img-responsive"
-                                             alt="NetWorking">
+                                            alt="NetWorking">
                                     </div>
                                 </div>
                                 <div class="i-f-text">
 
                                     <p>
-                                        A blockchain-based immutable, decentralized filesystem for the storing of static
-                                        content and the storage of dynamic data in the blockchain to be accessed through
+                                        A blockchain-based immutable, decentralized filesystem for the storing of
+                                        static
+                                        content and the storage of dynamic data in the blockchain to be accessed
+                                        through
                                         applications to make the internet distributed, resilient, and open.
                                     </p>
                                 </div>
@@ -241,14 +601,17 @@
                                 <div class="i-head">
                                     <div class="icon pds-icon">
                                         <img src="pics/section-images/Economy.png" class="img-responsive"
-                                             alt="NetWorking">
+                                            alt="NetWorking">
                                     </div>
                                 </div>
 
                                 <div class="i-f-text">
 
                                     <p>
-                                        A decentralized economy built on top of the Chromata network powered by a stable currency that is the basis for the network’s transactions and various free markets to enable a free exchange of data, goods, and ideas.
+                                        A decentralized economy built on top of the Chromata network powered by a
+                                        stable
+                                        currency that is the basis for the network’s transactions and various free
+                                        markets to enable a free exchange of data, goods, and ideas.
                                     </p>
                                 </div>
                             </div>
@@ -260,30 +623,24 @@
                                 <div class="i-head">
                                     <div class="icon pds-icon">
                                         <img src="pics/section-images/Name_System.png" class="img-responsive"
-                                             alt="NetWorking">
+                                            alt="NetWorking">
                                     </div>
                                 </div>
                                 <div class="i-f-text">
 
                                     <p>
-                                        A decentralized name system to map human-readable names with a unique address
+                                        A decentralized name system to map human-readable names with a unique
+                                        address
                                         while
-                                        eliminating centralized points of failure and returning ownership of data and
+                                        eliminating centralized points of failure and returning ownership of data
+                                        and
                                         identity to the user.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="space-60"></div>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-8 col-md-offset-2 text-center wow">
-                            <div class="down-offset fade-up">
-                                <img src="images/mobile1.png" class="img-responsive" alt="Mobile">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="space-60"></div>
+
                 </div>
             </div>
 
@@ -297,10 +654,12 @@
                                         <h1>A Faster Internet</h1>
                                     </div>
                                     <p>
-                                        Major aspects of the internet were developed and created around 30 years ago and
+                                        Major aspects of the internet were developed and created around 30 years ago
+                                        and
                                         haven’t been able to keep up with the monumental changes we've seen over the
                                         last
-                                        couple of decades. The Chromata protocol uses a peer-to-peer overlay network and
+                                        couple of decades. The Chromata protocol uses a peer-to-peer overlay network
+                                        and
                                         content-based addressing to build a faster internet.
                                     </p>
                                 </div>
@@ -332,9 +691,12 @@
                                         <h1>A Safer Internet</h1>
                                     </div>
                                     <p>
-                                        The centralized services of the internet have been censored, frauded, and faced
-                                        major cyberattacks while they continue to become more and more vulnerable. The
-                                        Chromata protocol uses an immutable, decentralized blockchain to help make the
+                                        The centralized services of the internet have been censored, frauded, and
+                                        faced
+                                        major cyberattacks while they continue to become more and more vulnerable.
+                                        The
+                                        Chromata protocol uses an immutable, decentralized blockchain to help make
+                                        the
                                         internet safer for everyone.
                                     </p>
                                 </div>
@@ -353,11 +715,14 @@
                                         <h1>A Freer Internet</h1>
                                     </div>
                                     <p>
-                                        Our internet has allowed centralized services to gather and keep data about the
+                                        Our internet has allowed centralized services to gather and keep data about
+                                        the
                                         vast
-                                        majority of people while mass surveillance and censorship are increasing. The
+                                        majority of people while mass surveillance and censorship are increasing.
+                                        The
                                         Chromata protocol uses a decentralized name service, programmable assets and
-                                        cryptocurrency, and returns ownership of data and identity to the user to create
+                                        cryptocurrency, and returns ownership of data and identity to the user to
+                                        create
                                         a
                                         freer internet.
                                     </p>
@@ -386,16 +751,21 @@
                                     </div>
                                     <p class="text-center">The internet is the world’s shared network where we
                                         communicate, learn, and work. For much of the world, a life without internet
-                                        access would be unimaginable. For the rest of the world, a connection and access
+                                        access would be unimaginable. For the rest of the world, a connection and
+                                        access
                                         to the internet transforms lives. But much of the internet we use today was
-                                        designed and developed a couple decades ago. As the rest of technology matured
-                                        at faster and faster speeds, our shared internet became more vulnerable and many
-                                        problems were visible. We have faced major cyberattacks and hacks on centralized
+                                        designed and developed a couple decades ago. As the rest of technology
+                                        matured
+                                        at faster and faster speeds, our shared internet became more vulnerable and
+                                        many
+                                        problems were visible. We have faced major cyberattacks and hacks on
+                                        centralized
                                         services and debate on the centralized ownership of data. It’s time for the
                                         internet to be updated.</p>
                                     <br>
                                     <div class="clearfix text-center">
-                                        <a href="pdfs/whitepaper.pdf" class="btn common-Button" target="_blank">Read the
+                                        <a href="pdfs/whitepaper.pdf" class="btn common-Button" target="_blank">Read
+                                            the
                                             Whitepaper</a>
                                     </div>
                                 </div>
@@ -406,29 +776,105 @@
                 </div>
 
             </div>
-               <!--Sponsors Section-->
-    <section class="sponsors-section" id="clients">
-    	<div class="auto-container">
-                <div class="sec-title-two centered">
-                        <h2>Add Text In Chromata</h2>
-                        <div class="desc-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+            <!--Sponsors Section-->
+            <section class="r-container">
+                <div class="container-wide">
+                    <div class="r-content">
+                        <div class="section-content fade-up">
+                            <h1>Add Text In Chromata</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                1500s,
+                                when
+                                an unknown printer took a galley of type and scrambled it to make a type specimen
+                                book.
+                            </p>
+                        </div>
+                        <div  id='client-ctnr'>
+                                <span href="#" class="btn common-Button client-more">See More</span>
+                        <ul class="sponsors-slider">
+                            <li>
+                                <div class="inner"><a href="#"><img src="images/sponsors/1.png" alt=""></a></div>
+                            </li>
+                            <li>
+                                <div class="inner"><a href="#"><img src="images/sponsors/4.png" alt=""></a></div>
+                            </li>
+                            <li>
+                                <div class="inner"><a href="#"><img src="images/sponsors/1.png" alt=""></a></div>
+                            </li>
+                            <li>
+                                <div class="inner"><a href="#"><img src="images/sponsors/4.png" alt=""></a></div>
+                            </li>
+                            <li>
+                                <div class="inner"><a href="#"><img src="images/sponsors/1.png" alt=""></a></div>
+                            </li>
+                            <li>
+                                <div class="inner"><a href="#"><img src="images/sponsors/4.png" alt=""></a></div>
+                            </li>
+                            <li>
+                                    <div class="inner"><a href="#"><img src="images/sponsors/4.png" alt=""></a></div>
+                                </li>
+
+                        </ul>
+                    
                     </div>
-            <ul class="sponsors-slider-one owl-theme owl-carousel">
-            	<li><div class="inner"><a href="#"><img src="images/sponsors/1.png" alt=""></a></div></li>
-                <li><div class="inner"><a href="#"><img src="images/sponsors/4.png" alt=""></a></div></li>
-                <li><div class="inner"><a href="#"><img src="images/sponsors/1.png" alt=""></a></div></li>
-                <li><div class="inner"><a href="#"><img src="images/sponsors/4.png" alt=""></a></div></li>
-                <li><div class="inner"><a href="#"><img src="images/sponsors/1.png" alt=""></a></div></li>
-                <li><div class="inner"><a href="#"><img src="images/sponsors/4.png" alt=""></a></div></li>
-                <li><div class="inner"><a href="#"><img src="images/sponsors/1.png" alt=""></a></div></li>
-                <li><div class="inner"><a href="#"><img src="images/sponsors/4.png" alt=""></a></div></li>
-                <li><div class="inner"><a href="#"><img src="images/sponsors/1.png" alt=""></a></div></li>
-                <li><div class="inner"><a href="#"><img src="images/sponsors/4.png" alt=""></a></div></li>
-                <li><div class="inner"><a href="#"><img src="images/sponsors/1.png" alt=""></a></div></li>
-                <li><div class="inner"><a href="#"><img src="images/sponsors/4.png" alt=""></a></div></li>
-            </ul>
-        </div>
-    </section>
+                    </div>
+
+                </div>
+
+            </section>
+            <!-- <section class="sponsors-section" id="clients">
+                <div class="auto-container">
+                    <div class="sec-title-two centered">
+                        <h2>Add Text In Chromata</h2>
+                        <div class="desc-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                            an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </div>
+                    </div>
+                    <a href="#" id='client-ctnr'>
+                        <button class="btn common-Button client-more">See More</button>
+                        <ul class="sponsors-slider-one owl-theme owl-carousel">
+                            <li>
+                                <div class="inner"><a href="#"><img src="images/sponsors/1.png" alt=""></a></div>
+                            </li>
+                            <li>
+                                <div class="inner"><a href="#"><img src="images/sponsors/4.png" alt=""></a></div>
+                            </li>
+                            <li>
+                                <div class="inner"><a href="#"><img src="images/sponsors/1.png" alt=""></a></div>
+                            </li>
+                            <li>
+                                <div class="inner"><a href="#"><img src="images/sponsors/4.png" alt=""></a></div>
+                            </li>
+                            <li>
+                                <div class="inner"><a href="#"><img src="images/sponsors/1.png" alt=""></a></div>
+                            </li>
+                            <li>
+                                <div class="inner"><a href="#"><img src="images/sponsors/4.png" alt=""></a></div>
+                            </li>
+                            <li>
+                                <div class="inner"><a href="#"><img src="images/sponsors/1.png" alt=""></a></div>
+                            </li>
+                            <li>
+                                <div class="inner"><a href="#"><img src="images/sponsors/4.png" alt=""></a></div>
+                            </li>
+                            <li>
+                                <div class="inner"><a href="#"><img src="images/sponsors/1.png" alt=""></a></div>
+                            </li>
+                            <li>
+                                <div class="inner"><a href="#"><img src="images/sponsors/4.png" alt=""></a></div>
+                            </li>
+                            <li>
+                                <div class="inner"><a href="#"><img src="images/sponsors/1.png" alt=""></a></div>
+                            </li>
+                            <li>
+                                <div class="inner"><a href="#"><img src="images/sponsors/4.png" alt=""></a></div>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+            </section> -->
         </main>
     </div>
 
@@ -482,7 +928,8 @@
                 </div>
             </div>
             <div class="footer-bottom row align-items-center fade-up">
-                <p class="footer-text col-md-12" style="color:#51718c;margin-top:15px;text-align:center;text-shadow:0px 0px 0px;">
+                <p class="footer-text col-md-12"
+                    style="color:#51718c;margin-top:15px;text-align:center;text-shadow:0px 0px 0px;">
 
                     Copyright ©
                     <script>
@@ -499,7 +946,7 @@
             </div>
         </div>
     </footer>
-    
+
     </div>
 
     <script src="js/plugins.js"></script>
