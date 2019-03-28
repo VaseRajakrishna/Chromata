@@ -968,11 +968,11 @@ img{
 }
 
 .banner-three .text-column h2{
-	font-size:34px;
-	font-weight:500;
-	color:#2a2f40;
-	line-height:1.3em;
-	margin-bottom:15px;	
+	font-size: 34px;
+    /* font-weight: 500; */
+    color: #208ceb;
+    line-height: 1.3em;
+    margin-bottom: 15px;
 }
 
 .banner-three .text-column p{
