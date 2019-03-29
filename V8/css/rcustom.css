@@ -906,6 +906,9 @@ button {
   left: 15px;
   top: 5px;
 }
+.banner-three {
+  padding: 90px 0px 100px;
+}
   .footer-area .single-footer-widget ul li {
     margin-bottom: 5px;
 }
