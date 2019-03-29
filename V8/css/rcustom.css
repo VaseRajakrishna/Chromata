@@ -467,13 +467,13 @@ button {
 
 .i-container {
   min-height: 410px;
-  border-top: 0.5px solid #eee;
   padding: 10px;
   padding-top: 0px;
   transition: all .25s ease-in-out;
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .25), 0 8px 16px -8px rgba(0, 0, 0, .3), 0 -6px 16px -6px rgba(0, 0, 0, .025);
   text-align: center;
   margin-bottom: 10px;
+  border-radius: 20px;
 }
 
     .i-container:hover {
@@ -482,6 +482,7 @@ button {
         box-shadow: 0 30px 60px -12px rgba(50, 50, 93, .25), 0 18px 36px -18px rgba(0, 0, 0, .3), 0 -12px 36px -8px rgba(0, 0, 0, .025);
         -webkit-transform: translateY(-4px);
         transform: translateY(-4px);
+        
     }
     
 .i-container h4 {
@@ -493,10 +494,13 @@ button {
   margin-top: 0px;
   margin-bottom: 15px;
   font-weight: 300;
+  transition: all .20s ease-in-out;
+  border-top-left-radius: 20px;
 }
     .i-container:hover h4 {
         background: #1f8ceb;
         color: white;
+        border-top-right-radius: 20px;
     }
 
 .i-f-text h4 {
@@ -887,6 +891,33 @@ button {
   .section-content p {
     font-size: 18px;
   }
+}
+@media (max-width:600px){
+  .container, .container-fluid, .container-lg, .container-wide, .container-xl{
+    padding: 0 10px;
+  }
+  .globalNav{
+    top:10px;
+  }
+  .logo a img {
+    max-width: 170px;
+}
+.globalNav .navSection.mobile .rootLink h2 {
+  left: 15px;
+  top: 5px;
+}
+  .footer-area .single-footer-widget ul li {
+    margin-bottom: 5px;
+}
+.footer-area .single-footer-widget h4{
+  margin-bottom: 10px;
+}
+footer ul{
+  margin-bottom: 10px;
+}
+.img-content img{
+  max-width: 100%;
+}
 }
 
 @media screen and (max-width:1000px) and (min-width:700px) {
