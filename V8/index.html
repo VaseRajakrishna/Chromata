@@ -29,66 +29,7 @@
     <script src="js/index.min.js"></script>
     <script src="js/jquery.js"></script>
     <style>
-        .no-display {
-            opacity: 0;
-        }
-
-        .appear {
-            opacity: 1;
-            -webkit-transition: all .4s ease-in-out;
-            -moz-transition: all .4s ease-in-out;
-            -o-transition: all .4s ease-in-out;
-            transition: all .4s ease-in-out;
-        }
-
-        .item p {
-            font-size: 18px;
-        }
-
-   
-        #client-ctnr{
-            margin: 25px 0px; 
-            position: relative;
-        }
-        .sponsors-slider {
-            width: 100%;
-            padding: 50px 0px;
-            text-align: center;
-
-        }
-
-        .sponsors-slider li {
-            width: 150px;
-            display: inline-block;
-        }
-        
-        .sponsors-slider:hover {
-            filter: blur(0.4em);
-            /* background: #eaeaea; */
-            z-index: -1;
-            cursor: pointer;
-        }
-        .client-more {
-           opacity: 0;
-            position: absolute;
-            z-index: 11;
-            left: 0;
-            right: 0;
-            top: 0;
-            /* bottom: 33%; */
-            max-width: 150px;
-            margin: 0 auto;
-        }
-
-        #client-ctnr:hover>.client-more {
-           opacity: 1;
-           top: 33%;
-        }
-        .client-more:hover>.sponsors-slider{
-            filter: blur(0.4em);
-            background: #eaeaea;
-            z-index: -1;
-        }
+       
     </style>
 </head>
 
@@ -98,7 +39,7 @@
             <nav>
                 <ul class="navRoot">
                     <li class="navSection logo">
-                        <a class="rootLink item-home colorize" href="/" aria-label="Chromata homepage">
+                        <a class="rootLink item-home colorize" href="index.html" aria-label="Chromata homepage">
                         <img src="images/global/chromata-logo.png" alt="Chromata">
                         </a>
                     </li>
@@ -116,7 +57,7 @@
                             <span>Company</span>
                         </button>
                         <a data-analytics-source="global_nav"
-                            class="rootLink item-pricing colorize" href="#">
+                            class="rootLink item-pricing colorize" href="about.html">
                             <span>About</span>
                         </a>
                     </li>
@@ -146,19 +87,19 @@
                                     <div class="mobileProductsList">
                                         <ul>
                                             <li>
-                                                <a class="linkContainer item-payments" href="#"
+                                                <a class="linkContainer item-payments" href="products.html"
                                                     data-analytics-source="mobile_nav">
                                                     Network
                                                 </a>
                                             </li>
                                             <li>
-                                                <a class="linkContainer item-subscriptions" href="#"
+                                                <a class="linkContainer item-subscriptions" href="products.html"
                                                     data-analytics-source="mobile_nav">
                                                     Name System
                                                 </a>
                                             </li>
                                             <li>
-                                                <a class="linkContainer item-connect" href="#"
+                                                <a class="linkContainer item-connect" href="products.html"
                                                     data-analytics-source="mobile_nav">
                                                     Compute
                                                 </a>
@@ -225,7 +166,7 @@
                                     </ul>
                                     <ul>
                                         <li>
-                                            <a class="item-about" href="#" data-analytics-source="mobile_nav">
+                                            <a class="item-about" href="about.html" data-analytics-source="mobile_nav">
                                                 About
                                             </a>
                                         </li>
@@ -269,7 +210,7 @@
                         <div class="linkGroup">
                             <ul class="productsGroupPrimary">
                                 <li>
-                                    <a class="linkContainer item-payments" href="#" data-analytics-source="nav_dropdown"
+                                    <a class="linkContainer item-payments" href="products.html" data-analytics-source="nav_dropdown"
                                         tabindex="-1">
 
                                         <div class="productLinkContent">
@@ -278,7 +219,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="linkContainer item-subscriptions" href="#"
+                                    <a class="linkContainer item-subscriptions" href="products.html"
                                         data-analytics-source="nav_dropdown" tabindex="-1">
                                         <div class="productLinkContent">
                                             <h3 class="linkTitle">Name System</h3>
@@ -287,7 +228,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="linkContainer item-connect" href="#" data-analytics-source="nav_dropdown"
+                                    <a class="linkContainer item-connect" href="products.html" data-analytics-source="nav_dropdown"
                                         tabindex="-1">
 
                                         <div class="productLinkContent">
@@ -297,7 +238,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="linkContainer item-subscriptions" href="#"
+                                    <a class="linkContainer item-subscriptions" href="products.html"
                                         data-analytics-source="nav_dropdown" tabindex="-1">
 
                                         <div class="productLinkContent">
@@ -397,7 +338,7 @@
 
                         <ul class="linkGroup linkList companyGroup">
                             <li>
-                                <a class="linkContainer item-about" href="#" data-analytics-source="nav_dropdown"
+                                <a class="linkContainer item-about" href="about.html" data-analytics-source="nav_dropdown"
                                     tabindex="-1">
                                     <h3 class="linkTitle linkIcon">About Chromata</h3>
                                 </a>
@@ -459,7 +400,7 @@
                                 <p class="fade-down">We're rebuilding the internet with blockchain technology and free market economics to
                                     protect Life, Liberty, and the pursuit of happiness. The Chromata protocol is a new,
                                     decentralized take on the internet to do this.</p>
-                                <div class="links-box clearfix fade-up"><a href="#" class="theme-btn btn-style-five">Find Out
+                                <div class="links-box clearfix fade-up"><a href="#" class="btn common-Button">Find Out
                                         More</a></div>
                             </div>
                         </div>

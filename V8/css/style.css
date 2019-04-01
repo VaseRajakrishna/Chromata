@@ -64,8 +64,8 @@ textarea{
 }
 
 p{
-	position:relative;
-	line-height:1.6em;	
+	/* position:relative;
+	line-height:1.6em;	 */
 }
 
 .strike-through{
@@ -1492,8 +1492,8 @@ img{
 .testimonials-section{
 	position:relative;
 	background:#ffffff;
-	padding:130px 0px 170px;
-	border-bottom:1px solid rgba(31,140,235,0.30);
+	padding:35px 0px 170px;
+	/* border-bottom:1px solid rgba(31,140,235,0.30); */
 	overflow:hidden;
 }
 
@@ -1524,11 +1524,10 @@ img{
 }
 
 .testimonials-carousel-one .text-column .text{
-	font-size:30px;
-	font-weight:300;
-	line-height:1.4em;
-	color:#3b566e;
-	font-style:italic;	
+	font-size: 25px;
+    font-weight: 300;
+    line-height: 1.4em;
+    color: #208ceb;
 }
 
 .testimonials-carousel-one .info-column .inner{
@@ -4304,7 +4303,7 @@ img{
 
 .counter-section{
 	position:relative;
-	background-color:#1f8ceb;
+    background: linear-gradient(148deg, rgb(23, 114, 246) 15%, rgb(44, 207, 230) 100%, rgba(117, 218, 255, 0.55) 13%);
 }
 
 .counter-section .inner-container{
@@ -4359,7 +4358,7 @@ img{
 
 .fact-counter .count-outer .count-text{
 	position:relative;
-	font-weight:700;
+	font-weight:300;
 	color:#ffffff;
 	font-size:24px;
 	line-height:1em;
@@ -4369,7 +4368,7 @@ img{
 .fact-counter .column .counter-title{
 	position:relative;
 	font-size:20px;
-	font-weight:400;
+	font-weight:300;
 	color:#ffffff;
 	text-transform:capitalize;
 }

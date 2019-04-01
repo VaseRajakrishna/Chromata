@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 
-blockquote,
+/* blockquote,
 body,
 button,
 dd,
@@ -21,7 +21,7 @@ pre,
 ul {
     margin: 0;
     padding: 0;
-}
+} */
 
 ol,
 ul {
