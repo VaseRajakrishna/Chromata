@@ -1,3 +1,29 @@
+// Raja Code 
+
+$(document).ready(function () {
+	$('.fade-up, .fade-down, .bounce-in, .flip-in, .fade-in-left, .fade-in-right').addClass(
+		'no-display');
+	$('.bounce-in').one('inview', function () {
+		$(this).addClass('animated bounceIn appear');
+	});
+	$('.flip-in').one('inview', function () {
+		$(this).addClass('animated flipInY appear');
+	});
+
+	$('.fade-up').one('inview', function () {
+		$(this).addClass('animated fadeInUp appear');
+	});
+	$('.fade-in-left').one('inview', function () {
+		$(this).addClass('animated fadeInLeft appear');
+	});
+	$('.fade-in-right').one('inview', function () {
+		$(this).addClass('animated fadeInRight appear');
+	});
+	$('.fade-down').one('inview', function () {
+		$(this).addClass('animated fadeInDown appear');
+	});
+
+});
 (function($) {
 
 	"use strict";

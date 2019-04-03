@@ -96,7 +96,7 @@ h1,h2,h3{
     text-shadow: 0px 0px 0px;
     font-family: 'Montserrat',Helvetica,Arial,sans-serif;
 }
-@font-face {
+/* @font-face {
     font-family: StripeIcons;
     src: url(/fonts/stripe-icons.woff2) format("woff2"), url(/fonts/stripe-icons.woff) format("woff");
 }
@@ -178,7 +178,7 @@ h1,h2,h3{
 @font-face {
     font-family: Flow-Circular;
     src: url(/fonts/flow/flow-circular.woff) format("woff");
-}
+} */
 
 .container,
 .container-fluid,
@@ -224,7 +224,7 @@ h1,h2,h3{
 
 @media (min-width:670px) {
     .common-SectionTitle {
-        font-size: 42px;
+        /* font-size: 42px; */
         line-height: 52px;
     }
 }
